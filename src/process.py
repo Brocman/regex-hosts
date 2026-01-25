@@ -6,7 +6,7 @@ HOSTS_URL = "https://raw.githubusercontent.com/Internet-Helper/GeoHideDNS/refs/h
 
 # пути относительно корня репозитория
 DOMAINS_FILE = Path("domains.txt")
-OUTPUT_FILE = Path("openai_hosts.txt")
+OUTPUT_FILE = Path("hosts")
 
 
 def build_regex(domains):
