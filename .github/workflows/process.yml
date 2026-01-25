@@ -1,18 +1,28 @@
-import re
-import requests
-from pathlib import Path
+name: Regex file processor
 
-# 🔴 ЗАМЕНИ ССЫЛКУ
-URL = "https://example.com/input.txt"
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * *"
 
-# 🔴 ЗАМЕНИ REGEX
-PATTERN = r"\b\d{4}-\d{2}-\d{2}\b"  # пример: даты YYYY-MM-DD
+jobs:
+  run:
+    runs-on: ubuntu-latest
 
-response = requests.get(URL, timeout=15)
-response.raise_for_status()
+    steps:
+      - uses: actions/checkout@v4
 
-matches = re.findall(PATTERN, response.text)
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-output = Path("output/result.txt")
-output.parent.mkdir(exist_ok=True)
-output.write_text("\n".join(matches), encoding="utf-8")
+      - run: pip install -r requirements.txt
+
+      - run: python src/process.py
+
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add output/result.txt
+          git commit -m "Auto update result" || echo "No changes"
+          git push
