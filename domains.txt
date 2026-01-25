@@ -166,3 +166,14 @@ web-sdk-assets.spotifycdn.com
 www-growth.scdn.co
 www.spotify.com
 
+api.elevenlabs.io
+api.us.elevenlabs.io
+eleven-public-cdn.elevenlabs.io
+elevenlabs.io
+elevenreader.io
+help.elevenlabs.io
+payload.elevenlabs.io
+try.elevenlabs.io
+www.elevenlabs.io
+
+
