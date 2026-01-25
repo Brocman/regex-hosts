@@ -35,10 +35,3 @@ jobs:
           git add hosts
           git commit -m "Auto update hosts" || echo "No changes"
           git push
-
-      - name: Create release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: generated-${{ github.run_number }}
-          name: Generated hosts ${{ github.run_number }}
-          files: hosts
