@@ -23,6 +23,6 @@ jobs:
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add output/result.txt
+          git add hosts
           git commit -m "Auto update result" || echo "No changes"
           git push
