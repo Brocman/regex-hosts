@@ -3,10 +3,9 @@ import requests
 from pathlib import Path
 from datetime import datetime
 
-HOSTS_URL = "https://raw.githubusercontent.com/Internet-Helper/GeoHideDNS/refs/heads/main/hosts/hosts"
-
-# пути относительно корня репозитория
+# файлы проекта
 DOMAINS_FILE = Path("domains.txt")
+SOURCES_FILE = Path("sources.txt")
 OUTPUT_FILE = Path("hosts")
 
 
@@ -24,17 +23,33 @@ def build_regex(domains):
     return re.compile(pattern, re.IGNORECASE | re.MULTILINE | re.VERBOSE)
 
 
+def load_sources():
+    return [
+        line.strip()
+        for line in SOURCES_FILE.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+
+
 def main():
     # читаем домены
     domains = DOMAINS_FILE.read_text(encoding="utf-8").splitlines()
     regex = build_regex(domains)
 
-    # скачиваем upstream hosts
-    response = requests.get(HOSTS_URL, timeout=20)
-    response.raise_for_status()
+    # читаем источники
+    sources = load_sources()
+
+    combined_text = []
+
+    for url in sources:
+        response = requests.get(url, timeout=20)
+        response.raise_for_status()
+        combined_text.append(response.text)
+
+    full_hosts_text = "\n".join(combined_text)
 
     # ищем совпадения
-    matches = regex.findall(response.text)
+    matches = regex.findall(full_hosts_text)
 
     # дата генерации
     generated_date = datetime.utcnow().strftime("%Y-%m-%d")
