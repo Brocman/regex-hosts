@@ -362,8 +362,6 @@
 95.182.120.241 ecs.office.com
 45.155.204.190 rewards.bing.com
 95.182.120.241 rewards.bing.com
-45.155.204.190 sydney.bing.com
-95.182.120.241 sydney.bing.com
 45.155.204.190 xboxdesignlab.xbox.com
 95.182.120.241 xboxdesignlab.xbox.com
 45.155.204.190 xgpuweb.gssv-play-prod.xboxlive.com
@@ -488,4 +486,3 @@
 95.182.120.241 windsurf-telemetry.codeium.com
 45.155.204.190 windsurf.com
 95.182.120.241 windsurf.com
-0.0.0.0 sydney.bing.com
