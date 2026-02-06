@@ -1,2 +1,2 @@
 https://raw.githubusercontent.com/Internet-Helper/GeoHideDNS/refs/heads/main/hosts/hosts
-https://github.com/Brocman/regex-hosts/blob/main/custom.hosts
+https://raw.githubusercontent.com/Brocman/regex-hosts/refs/heads/main/custom.hosts
