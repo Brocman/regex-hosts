@@ -1,2 +1,2 @@
 https://raw.githubusercontent.com/Internet-Helper/GeoHideDNS/refs/heads/main/hosts/hosts
-45.155.204.190 4pda.to
+https://github.com/Brocman/regex-hosts/blob/main/custom.hosts
