@@ -87,16 +87,23 @@ a-cdn.anthropic.com
 anthropic.com
 api.anthropic.com
 api.claude.ai
+api.claude.com
 api.console.anthropic.com
 auth.anthropic.com
 claude.ai
+claude.com
+claudemcpclient.com
 console.anthropic.com
+platform.claude.ai
+platform.claude.com
 s-cdn.anthropic.com
 statsig.anthropic.com
 status.anthropic.com
 support.anthropic.com
 www.anthropic.com
 www.claude.ai
+www.claude.com
+www.claudemcpclient.com
 
 accounts.x.ai
 api.x.ai
