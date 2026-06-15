@@ -1,4 +1,4 @@
-# Generated: 2026-06-14
+# Generated: 2026-06-15
 
 45.155.204.190 canva.com
 37.230.192.51 canva.com
@@ -8,8 +8,6 @@
 37.230.192.51 static.canva.com
 45.155.204.190 www.canva.com
 37.230.192.51 www.canva.com
-45.155.204.190 chatgpt.com
-37.230.192.51 chatgpt.com
 45.155.204.190 ab.chatgpt.com
 37.230.192.51 ab.chatgpt.com
 45.155.204.190 android.chat.openai.com
@@ -36,6 +34,8 @@
 37.230.192.51 cdn.openai.com
 45.155.204.190 chat.openai.com
 37.230.192.51 chat.openai.com
+45.155.204.190 chatgpt.com
+37.230.192.51 chatgpt.com
 45.155.204.190 community.openai.com
 37.230.192.51 community.openai.com
 45.155.204.190 contest.openai.com
@@ -76,8 +76,6 @@
 37.230.192.51 platform.openai.com
 45.155.204.190 sora.chatgpt.com
 37.230.192.51 sora.chatgpt.com
-45.155.204.190 sora.com
-37.230.192.51 sora.com
 45.155.204.190 spinningup.openai.com
 37.230.192.51 spinningup.openai.com
 45.155.204.190 tcr9i.chat.openai.com
@@ -370,10 +368,10 @@
 37.230.192.51 designer.microsoft.com
 45.155.204.190 designerapp.officeapps.live.com
 37.230.192.51 designerapp.officeapps.live.com
-45.155.204.190 edgeservices.bing.com
-37.230.192.51 edgeservices.bing.com
 45.155.204.190 ecs.office.com
 37.230.192.51 ecs.office.com
+45.155.204.190 edgeservices.bing.com
+37.230.192.51 edgeservices.bing.com
 45.155.204.190 rewards.bing.com
 37.230.192.51 rewards.bing.com
 45.155.204.190 xboxdesignlab.xbox.com
